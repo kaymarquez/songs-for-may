@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Songs for May",
+  "description": "Recommends a song on Spotify from Broadway/a musical on every click",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.PNG",
+    "default_title": "Click me for a song!"
+  },
+  "web_accessible_resources": [{
+    "resources": ["songs.txt"],
+    "matches": ["<all_urls>"]
+  }]
+}
